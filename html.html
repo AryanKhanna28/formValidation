@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 50px;
+        }
+        form{
+            border: 1px solid black;
+            width: 220px;
+            padding: 20px;
+            margin: auto auto;
+            background-color: aquamarine;
+            border-radius: 10px;
+            /* min-height: 200px; */
+
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1><u>Email Registration</u></h1>
+        <form action="#">
+            <label for="Fname">First Name</label>
+            <input type="text"  id="Fname" name="name" onchange="validateFname(event)">
+            <br><br>
+            <label for="Lname">Last Name</label>
+            <input type="text"  id="Lname" name="name" onchange="validateLname(event)">
+            <br><br>
+            <label for="email">Email</label><br>
+            <input type="email"  id="email" name="email" onchange="validateEmail(event)">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password"  id="password" name="password" onchange="validatePass(event)">
+            <br><br>
+            <label for="phone">Contact Number</label>
+            <input type="tel" name="phone" id="phone" onchange="validatePhone(event)">
+            <br><br>
+            <input  id="submit" type="Submit" disabled="true" >
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
